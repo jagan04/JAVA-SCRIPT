@@ -1,13 +1,17 @@
 var s=[-1,-2,-4,-7,6];
 var m=s.length;
-for(i=0;i<m;i++)
+subarray(s,m);
+function subarray(a,f)
+{
+for(i=0;i<f;i++)
 {   
     let y=[];
-    for(j=i;j<m;j++)
+    for(j=i;j<f;j++)
     {
-        y.push(s[j]);
+        y.push(a[j]);
         console.log(y);
     }
+}
 }
 
 OUTPUT:
