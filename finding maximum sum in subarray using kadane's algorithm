@@ -1,8 +1,14 @@
-var a=[1,2,4,-7,-6]; 
-var maxsum;
-var cursum;
+var s=[1,2,4,-7,-6];
+var m=s.length;
+var a=sumarray(s,m);
+console..log(a);
+function sumarray(a,n)
+{
+let maxsum;
+let cursum;
 maxsum=cursum=0;
-for(i=0;i<a.length;i++)
+
+for(i=0;i<n;i++)
 {
     cursum +=a[i];
    if(cursum<a[i])
@@ -15,4 +21,6 @@ for(i=0;i<a.length;i++)
    }
     
 }
-console.log(maxsum);
+return maxsum;
+}
+
