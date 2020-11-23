@@ -24,3 +24,5 @@ for(i=0;i<n;i++)
 return maxsum;
 }
 
+OUTPUT:
+7
